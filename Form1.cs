@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 namespace Shamaev_IKM_721Б_Course_project
 {
@@ -33,6 +36,7 @@ namespace Shamaev_IKM_721Б_Course_project
         {
             MajorObject = new MajorWork();
             MajorObject.SetTime();
+            MajorObject.Modify = false;// заборона запису
             About A = new About(); // створення форми About
             A.tAbout.Start();
             A.ShowDialog(); // відображення діалогового вікна About
@@ -101,9 +105,10 @@ namespace Shamaev_IKM_721Б_Course_project
 
         private void зберегтиЯкToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (sfdSave.ShowDialog() == DialogResult.OK)// Виклик діалогового вікна збереження файлу
+            if (sfdSave.ShowDialog() == DialogResult.OK) // Виклик діалогового вікна збереження файлу
             {
-                MessageBox.Show(sfdSave.FileName);
+                MajorObject.WriteSaveFileName(sfdSave.FileName); // написання імені файлу
+                MajorObject.SaveToFile(); // метод збереження в файл }
             }
         }
 
@@ -124,16 +129,19 @@ namespace Shamaev_IKM_721Б_Course_project
                 try
                 {
                     System.IO.DriveInfo D = new System.IO.DriveInfo(disks[i]);
-                    disk += D.Name + "-" + D.TotalSize.ToString() + "-" + D.TotalFreeSpace.ToString()
-                    + (char)13;// змінній присвоюється ім’я диска, загальна кількість місця и вільне місце на диску
+                    disk += D.Name + "-" + (Math.Round((double)D.TotalSize / (1024 * 1024 * 1024), 2)) + 
+                        "ГБ" + "-" + (Math.Round((double)D.TotalFreeSpace / (1024 * 1024 * 1024), 2)) + "ГБ"
+                        + (char)13;//змінній присвоюється ім’я диска, загальна кількість місця и вільнемісце на диску
                 }
                 catch
                 {
                     disk += disks[i] + "- не готовий" + (char)13; // якщо пристрій не готовий, то виведення на екран ім’я пристрою і повідомлення «не готовий»
-}
-            }
 
+                }
+
+            }
             MessageBox.Show(disk, "Накопичувачі");
+
         }
     }
 }
