@@ -13,9 +13,19 @@ namespace Shamaev_IKM_721Б_Course_project
         private string Data; //вхідні дані
         private string Result; // Поле результату
         private System.DateTime TimeBegin; // час початку роботи програми
-                                           // Методи
+        private string SaveFileName;// ім’я файлу для запису
+        private string OpenFileName;// ім’я файлу для читання
 
+                              // Методи
 
+        public void WriteSaveFileName(string S)// метод запису даних в об'єкт
+        {
+            this.SaveFileName = S;// запам'ятати ім’я файлу для запису
+        }
+        public void WriteOpenFileName(string S)
+        {
+            this.OpenFileName = S;// запам'ятати ім’я файлу для відкриття
+        }
         public void SetTime() // метод запису часу початку роботи програми
         {
             this.TimeBegin = System.DateTime.Now;
