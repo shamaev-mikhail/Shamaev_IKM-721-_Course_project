@@ -6,6 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Shamaev_IKM_721Б_Course_project
 {
@@ -21,6 +22,11 @@ namespace Shamaev_IKM_721Б_Course_project
         public bool Modify;
         private int Key;// поле ключа
 
+        public Stack myStack = new Stack();
+        public string[] myArr = new string[100];
+
+        public Queue myQueue = new Queue();
+        public string[] smyQueue = new string[100];
         // Методи
 
         public void WriteSaveFileName(string S)// метод запису даних в об'єкт
