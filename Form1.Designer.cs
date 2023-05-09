@@ -78,6 +78,25 @@
             this.зберегтиЯкToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.відкритиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.port = new System.IO.Ports.SerialPort(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwOpen)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -88,6 +107,10 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -134,7 +157,7 @@
             this.довідкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1368, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1368, 40);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -150,60 +173,60 @@
             this.toolStripSeparator3,
             this.вихідToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(90, 44);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(90, 40);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // новийToolStripMenuItem
             // 
             this.новийToolStripMenuItem.Name = "новийToolStripMenuItem";
             this.новийToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.новийToolStripMenuItem.Size = new System.Drawing.Size(329, 44);
+            this.новийToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.новийToolStripMenuItem.Text = "Новий";
             this.новийToolStripMenuItem.Click += new System.EventHandler(this.новийToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(326, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(356, 6);
             // 
             // відкритиToolStripMenuItem
             // 
             this.відкритиToolStripMenuItem.Name = "відкритиToolStripMenuItem";
             this.відкритиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.відкритиToolStripMenuItem.Size = new System.Drawing.Size(329, 44);
+            this.відкритиToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.відкритиToolStripMenuItem.Text = "Відкрити";
             this.відкритиToolStripMenuItem.Click += new System.EventHandler(this.відкритиToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(326, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(356, 6);
             // 
             // зберегтиToolStripMenuItem
             // 
             this.зберегтиToolStripMenuItem.Name = "зберегтиToolStripMenuItem";
             this.зберегтиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(329, 44);
+            this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.зберегтиToolStripMenuItem.Text = "Зберегти";
             this.зберегтиToolStripMenuItem.Click += new System.EventHandler(this.зберегтиToolStripMenuItem_Click);
             // 
             // зберегтиЯкToolStripMenuItem
             // 
             this.зберегтиЯкToolStripMenuItem.Name = "зберегтиЯкToolStripMenuItem";
-            this.зберегтиЯкToolStripMenuItem.Size = new System.Drawing.Size(329, 44);
+            this.зберегтиЯкToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.зберегтиЯкToolStripMenuItem.Text = "Зберегти як";
             this.зберегтиЯкToolStripMenuItem.Click += new System.EventHandler(this.зберегтиЯкToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(326, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(356, 6);
             // 
             // вихідToolStripMenuItem
             // 
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
             this.вихідToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(329, 44);
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.вихідToolStripMenuItem.Text = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
@@ -215,26 +238,26 @@
             this.проНакопичувачіToolStripMenuItem,
             this.текстовіФайлиToolStripMenuItem});
             this.роботаToolStripMenuItem.Name = "роботаToolStripMenuItem";
-            this.роботаToolStripMenuItem.Size = new System.Drawing.Size(111, 38);
+            this.роботаToolStripMenuItem.Size = new System.Drawing.Size(111, 40);
             this.роботаToolStripMenuItem.Text = "Робота";
             // 
             // пускToolStripMenuItem
             // 
             this.пускToolStripMenuItem.Name = "пускToolStripMenuItem";
             this.пускToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F9;
-            this.пускToolStripMenuItem.Size = new System.Drawing.Size(350, 44);
+            this.пускToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.пускToolStripMenuItem.Text = "Пуск";
             this.пускToolStripMenuItem.Click += new System.EventHandler(this.bStart_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(347, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(356, 6);
             // 
             // проНакопичувачіToolStripMenuItem
             // 
             this.проНакопичувачіToolStripMenuItem.Name = "проНакопичувачіToolStripMenuItem";
-            this.проНакопичувачіToolStripMenuItem.Size = new System.Drawing.Size(350, 44);
+            this.проНакопичувачіToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.проНакопичувачіToolStripMenuItem.Text = "Про накопичувачі";
             this.проНакопичувачіToolStripMenuItem.Click += new System.EventHandler(this.проНакопичувачіToolStripMenuItem_Click);
             // 
@@ -243,7 +266,7 @@
             this.довідкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.проПрограмуToolStripMenuItem});
             this.довідкаToolStripMenuItem.Name = "довідкаToolStripMenuItem";
-            this.довідкаToolStripMenuItem.Size = new System.Drawing.Size(121, 44);
+            this.довідкаToolStripMenuItem.Size = new System.Drawing.Size(121, 40);
             this.довідкаToolStripMenuItem.Text = "Довідка";
             // 
             // проПрограмуToolStripMenuItem
@@ -294,6 +317,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 54);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -342,7 +366,7 @@
             this.tabPage3.Controls.Add(this.splitContainer1);
             this.tabPage3.Location = new System.Drawing.Point(8, 39);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1352, 770);
+            this.tabPage3.Size = new System.Drawing.Size(1328, 759);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Стек / Черга";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -351,7 +375,6 @@
             // 
             this.splitContainer1.BackColor = System.Drawing.Color.LightGray;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -373,13 +396,13 @@
             this.splitContainer1.Panel2.Controls.Add(this.QueueText);
             this.splitContainer1.Panel2.Controls.Add(this.Queuetb);
             this.splitContainer1.Panel2.Controls.Add(this.Enqueue);
-            this.splitContainer1.Size = new System.Drawing.Size(1352, 770);
-            this.splitContainer1.SplitterDistance = 645;
+            this.splitContainer1.Size = new System.Drawing.Size(1328, 759);
+            this.splitContainer1.SplitterDistance = 352;
             this.splitContainer1.TabIndex = 0;
             // 
             // Push
             // 
-            this.Push.Location = new System.Drawing.Point(81, 358);
+            this.Push.Location = new System.Drawing.Point(13, 358);
             this.Push.Name = "Push";
             this.Push.Size = new System.Drawing.Size(131, 53);
             this.Push.TabIndex = 0;
@@ -398,7 +421,7 @@
             // StackText
             // 
             this.StackText.AutoSize = true;
-            this.StackText.Location = new System.Drawing.Point(281, 142);
+            this.StackText.Location = new System.Drawing.Point(265, 142);
             this.StackText.Name = "StackText";
             this.StackText.Size = new System.Drawing.Size(60, 25);
             this.StackText.TabIndex = 4;
@@ -407,7 +430,7 @@
             // LabelStack
             // 
             this.LabelStack.AutoSize = true;
-            this.LabelStack.Location = new System.Drawing.Point(281, 498);
+            this.LabelStack.Location = new System.Drawing.Point(222, 498);
             this.LabelStack.Name = "LabelStack";
             this.LabelStack.Size = new System.Drawing.Size(119, 25);
             this.LabelStack.TabIndex = 5;
@@ -415,7 +438,7 @@
             // 
             // Pop
             // 
-            this.Pop.Location = new System.Drawing.Point(265, 358);
+            this.Pop.Location = new System.Drawing.Point(171, 358);
             this.Pop.Name = "Pop";
             this.Pop.Size = new System.Drawing.Size(131, 53);
             this.Pop.TabIndex = 6;
@@ -425,7 +448,7 @@
             // 
             // Peek
             // 
-            this.Peek.Location = new System.Drawing.Point(449, 358);
+            this.Peek.Location = new System.Drawing.Point(326, 358);
             this.Peek.Name = "Peek";
             this.Peek.Size = new System.Drawing.Size(131, 53);
             this.Peek.TabIndex = 7;
@@ -435,7 +458,7 @@
             // 
             // Peek_q
             // 
-            this.Peek_q.Location = new System.Drawing.Point(466, 358);
+            this.Peek_q.Location = new System.Drawing.Point(320, 358);
             this.Peek_q.Name = "Peek_q";
             this.Peek_q.Size = new System.Drawing.Size(131, 53);
             this.Peek_q.TabIndex = 13;
@@ -445,7 +468,7 @@
             // 
             // Dequeue
             // 
-            this.Dequeue.Location = new System.Drawing.Point(282, 358);
+            this.Dequeue.Location = new System.Drawing.Point(168, 358);
             this.Dequeue.Name = "Dequeue";
             this.Dequeue.Size = new System.Drawing.Size(131, 53);
             this.Dequeue.TabIndex = 12;
@@ -456,7 +479,7 @@
             // LabelQueue
             // 
             this.LabelQueue.AutoSize = true;
-            this.LabelQueue.Location = new System.Drawing.Point(298, 498);
+            this.LabelQueue.Location = new System.Drawing.Point(229, 498);
             this.LabelQueue.Name = "LabelQueue";
             this.LabelQueue.Size = new System.Drawing.Size(129, 25);
             this.LabelQueue.TabIndex = 11;
@@ -465,7 +488,7 @@
             // QueueText
             // 
             this.QueueText.AutoSize = true;
-            this.QueueText.Location = new System.Drawing.Point(298, 142);
+            this.QueueText.Location = new System.Drawing.Point(229, 142);
             this.QueueText.Name = "QueueText";
             this.QueueText.Size = new System.Drawing.Size(70, 25);
             this.QueueText.TabIndex = 10;
@@ -474,14 +497,14 @@
             // Queuetb
             // 
             this.Queuetb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Queuetb.Location = new System.Drawing.Point(206, 248);
+            this.Queuetb.Location = new System.Drawing.Point(112, 248);
             this.Queuetb.Name = "Queuetb";
             this.Queuetb.Size = new System.Drawing.Size(268, 49);
             this.Queuetb.TabIndex = 9;
             // 
             // Enqueue
             // 
-            this.Enqueue.Location = new System.Drawing.Point(98, 358);
+            this.Enqueue.Location = new System.Drawing.Point(22, 358);
             this.Enqueue.Name = "Enqueue";
             this.Enqueue.Size = new System.Drawing.Size(131, 53);
             this.Enqueue.TabIndex = 8;
@@ -528,6 +551,230 @@
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = "";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel1);
+            this.tabPage4.Location = new System.Drawing.Point(8, 39);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1328, 759);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Com Port";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.listBox1);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Location = new System.Drawing.Point(11, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1325, 753);
+            this.panel1.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Location = new System.Drawing.Point(0, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(286, 178);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.comboBox6);
+            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.comboBox4);
+            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Enabled = false;
+            this.groupBox2.Location = new System.Drawing.Point(0, 187);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(286, 563);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(60, 84);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(169, 33);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "75",
+            "110",
+            "134",
+            "150",
+            "300",
+            "600",
+            "1200",
+            "1800",
+            "2400",
+            "4800",
+            "7200",
+            "9600",
+            "14400",
+            "19200",
+            "38400",
+            "57600",
+            "115200",
+            "128000"});
+            this.comboBox2.Location = new System.Drawing.Point(60, 71);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(169, 33);
+            this.comboBox2.TabIndex = 2;
+            this.comboBox2.Text = "115200";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.comboBox3.Location = new System.Drawing.Point(60, 161);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(169, 33);
+            this.comboBox3.TabIndex = 3;
+            this.comboBox3.Text = "8";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Парний",
+            "Непарний",
+            "Ні",
+            "Маркер",
+            "Пробіл"});
+            this.comboBox4.Location = new System.Drawing.Point(60, 247);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(169, 33);
+            this.comboBox4.TabIndex = 2;
+            this.comboBox4.Text = "Ні";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "1",
+            "1.5",
+            "2",
+            "Ні"});
+            this.comboBox5.Location = new System.Drawing.Point(60, 337);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(169, 33);
+            this.comboBox5.TabIndex = 2;
+            this.comboBox5.Text = "1";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Xon/Xoff",
+            "Апаратне",
+            "Ні"});
+            this.comboBox6.Location = new System.Drawing.Point(60, 429);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(169, 33);
+            this.comboBox6.TabIndex = 2;
+            this.comboBox6.Text = "Ні";
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(102, 488);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 54);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Старт";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Оберіть порт";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(55, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(177, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Швидкість (біт/с)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(55, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Біти даних";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(55, 219);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 25);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Парність";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(55, 309);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 25);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Стопові біти";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(55, 401);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(209, 25);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Керування потоком";
+            // 
+            // port
+            // 
+            this.port.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.port_DataReceived);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Location = new System.Drawing.Point(292, 9);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(1022, 729);
+            this.listBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -556,6 +803,12 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -612,6 +865,25 @@
         private System.Windows.Forms.ToolStripMenuItem зберегтиЯкToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem відкритиToolStripMenuItem1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.IO.Ports.SerialPort port;
     }
 }
 
